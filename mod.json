@@ -1,7 +1,7 @@
 {
-	"Name": "Remixer!",
-	"Author": "GarranPlum",
-	"Description": "Remix parts from your favorite mods and the base game to create your own monuments without code! Built with GPS.",
+	"Name": "Detailer",
+	"Author": "SkunkMonkey",
+	"Description": "Allows detailing with parts from decoration mods under one monument. Built with GPS.",
 	"Version": "1.0.0",
 
 	"Dependencies": [

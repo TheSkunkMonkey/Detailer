@@ -12,7 +12,6 @@ local modName = "detailer"
 
 -- MY CONFIG Remix
 local remix = {
-    --[[
     PINES = {"JK_PINE_A_PART", -- Fancy Nature Pack
     "JK_PINE_B_PART", -- Fancy Nature Pack
     "JK_PINE_C_PART" -- Fancy Nature Pack
@@ -94,7 +93,6 @@ local remix = {
     "REED1", -- Nature Deco
     "REED2" -- Nature Deco
     },
---]]
     MISC = { -- Miscellaneous
     "CAT_PART", -- Fantasy Deco
     "DOG_PART" -- Fantasy Deco
@@ -112,8 +110,6 @@ local workplaces = {}
 
 -- MY CONFIG Categories
 local categories = {
-
-    --[[
     PINES = {
         JK_PINE_A_PART = { -- Fancy Nature Pack
             Order = 1,
@@ -477,50 +473,18 @@ local categories = {
             BuildingRegistered = true
         }
     },
---]]
     MISC = {
         CAT_PART = { -- Fantasy Deco
+            Order = 1,
             AssetRegistered = true,
             BuildingRegistered = true
         },
         DOG_PART = { -- Fantasy Deco
+            Order = 2,
             AssetRegistered = true,
             BuildingRegistered = true
         }
     }
-
-    --[[
-    FLORA = {
-        BUILDING_PART_SHRINE_FLOWER_RED = {
-            AssetRegistered = true,
-            BuildingRegistered = true
-        },
-        BUILDING_PART_SHRINE_FLOWER_BLUE = {
-            AssetRegistered = true,
-            BuildingRegistered = true
-        },
-        BUILDING_PART_LUSH_GARDEN_SMALL_TREE = {
-            AssetRegistered = true,
-            BuildingRegistered = true
-        }
-    },
-    FURNITURE = {
-        BUILDING_PART_MARKET_BENCH = {
-            AssetRegistered = true,
-            BuildingRegistered = true
-        },
-        BUILDING_PART_MARKET_FENCE = {
-            AssetRegistered = true,
-            BuildingRegistered = true
-        },
-    },
-    STORAGE = {
-        BUILDING_PART_MARKET_BARRELS = {
-            AssetRegistered = true,
-            BuildingRegistered = true
-        }
-    }
---]]
 }
 
 -- MY CONFIG Model Files
@@ -533,27 +497,23 @@ local nodeTypes = {}
 local monuments = {
     DETAILER = {
         Categories = {
-            --[[
-            PINES = {},
-            MAPLES = {},
-            OAKS = {},
-            BEECHES = {},
-            BIRCHES = {},
-            TREES = {},
-            SHRUBS = {},
-            FLOWERS = {},
-            GRASS = {},
-            LGROCKS = {},
-            MEDROCKS = {},
-            SMROCKS = {},
-            LOGS = {},
-            WATER = {},
---]]
-            MISC = {}
+            PINES = {Order = 1},
+            MAPLES = {Order = 2},
+            OAKS = {Order = 3},
+            BEECHES = {Order = 4},
+            BIRCHES = {Order = 5},
+            TREES = {Order = 6},
+            SHRUBS = {Order = 7},
+            FLOWERS = {Order = 8},
+            GRASS = {Order = 9},
+            LGROCKS = {Order = 10},
+            MEDROCKS = {Order = 11},
+            SMROCKS = {Order = 12},
+            LOGS = {Order = 13},
+            WATER = {Order = 14},
+            MISC = {Order = 15}
         },
         Type = "DECORATION"
-        --        Categories = {FLORA = {}, FURNITURE = {}, STORAGE = {}},
-        --        Type = "MODS"
     }
 }
 
