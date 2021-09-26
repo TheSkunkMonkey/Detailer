@@ -1,0 +1,23 @@
+{
+	"": {
+		"REMIXER": "Detailer",
+		"REMIXER_DESC": "Allows detailing with parts from decoration mods under one monument. Built with GPS.",
+		"DETAILER": "Detailer",
+		"DETAILER_DESC": "Allows detailing with parts from decoration mods under one monument. Built with GPS.",
+		"CATEGORY_PINES": "Pines",
+		"CATEGORY_MAPLES": "Maples",
+		"CATEGORY_OAKS": "Oaks",
+		"CATEGORY_BEECHES": "Beeches",
+		"CATEGORY_BIRCHES": "Birches",
+		"CATEGORY_TREES": "Misc. Trees",
+		"CATEGORY_SHRUBS": "Shrubs",
+		"CATEGORY_FLOWERS": "Flowers",
+		"CATEGORY_GRASS": "Grass",
+		"CATEGORY_LGROCKS": "Boulders",
+		"CATEGORY_MEDROCKS": "Stones",
+		"CATEGORY_SMROCKS": "Rocks",
+		"CATEGORY_LOGS": "Logs",
+		"CATEGORY_WATER": "Aquatic",
+		"CATEGORY_MISC": "Miscellaneous"
+	}
+}

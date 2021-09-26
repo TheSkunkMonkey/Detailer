@@ -1,0 +1,25 @@
+{
+	"Name": "Remixer!",
+	"Author": "GarranPlum",
+	"Description": "Remix parts from your favorite mods and the base game to create your own monuments without code! Built with GPS.",
+	"Version": "1.0.0",
+
+	"Dependencies": [
+		{
+			"Id": "fc6ffa08-0843-4589-b3f8-1be073e8aac1",
+			"Name": "Shrubbery"
+		},
+		{
+			"Id": "cfaa7652-e8e6-47d5-94d0-a75d49483913",
+			"Name": "Fantasy Decorations"
+		},
+		{
+			"Id": "6057d8ae-b38b-4746-bf3b-56bab3a11ec6",
+			"Name": "Nature Decorations"
+		},
+		{
+			"Id": "c7150933-194f-4a98-d0c9-523d7a123da9",
+			"Name": "Fancy Nature Pack"
+		}
+	]
+}
