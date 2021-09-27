@@ -1,15 +1,15 @@
-﻿-- REMIXER!
--- by Garran Plum
+﻿-- Detailer
+-- by Skunk Monkey
 --
--- Collects in one monument any parts from the game or other mods.
--- Requires no code changes (only config changes) to add parts.
--- An example of simple, declarative modding with GPS.
+-- All my favorite flora/fauna parts from various mods
+-- gathered under one monument for easy mmaipulation
+-- and organization. Made with GPS.
 
--- Get more GP mods at mod.io:
--- https://mod.io/members/garranplum
+-- Get more SM mods at mod.io:
+-- https://mod.io/members/skunkmonkey
 --
--- Join The Orchard, a GP modding Discord:
--- https://discord.gg/aeehVjMtzB
+-- GPS by Garraun Plum
+-- https://mod.io/members/garranplum
 --
 -- 
 -- MODULE MOD.LUA

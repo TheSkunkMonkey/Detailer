@@ -1,6 +1,11 @@
 -- MODULE CONFIG.LUA
 -- by Garran Plum
 --
+-- Detailer
+-- Modified by Skunk Monkey
+-- All my favorite flora/fauna parts from various mods gathered under one monument for easy mmaipulation and organization.
+--
+--
 -- GP Configuration for this individual mod.
 -- IMPORT GP OBJECT
 local myMod, GP = ...
@@ -12,67 +17,79 @@ local modName = "detailer"
 
 -- MY CONFIG Remix
 local remix = {
-    PINES = {"JK_PINE_A_PART", -- Fancy Nature Pack
+    PINES = { -- Pine Trees
+    "JK_PINE_A_PART", -- Fancy Nature Pack
     "JK_PINE_B_PART", -- Fancy Nature Pack
     "JK_PINE_C_PART" -- Fancy Nature Pack
     },
-    MAPLES = {"JK_MAPLE_A_PART", -- Fancy Nature Pack
+    MAPLES = { -- Maple Trees
+    "JK_MAPLE_A_PART", -- Fancy Nature Pack
     "JK_MAPLE_B_PART" -- Fancy Nature Pack
     },
-    OAKS = {"JK_OAK_A_PART", -- Fancy Nature Pack
+    OAKS = { -- Oak Trees
+    "JK_OAK_A_PART", -- Fancy Nature Pack
     "JK_OAK_B_PART", -- Fancy Nature Pack
     "JK_OAK_C_PART" -- Fancy Nature Pack
     },
-    BEECHES = {"JK_BEECH_A_PART", -- Fancy Nature Pack
+    BEECHES = { -- Beech Trees
+    "JK_BEECH_A_PART", -- Fancy Nature Pack
     "JK_BEECH_B_PART", -- Fancy Nature Pack
     "JK_BEECH_C_PART", -- Fancy Nature Pack
     "JK_BEECH_D_PART", -- Fancy Nature Pack
     "JK_BEECH_SAPLING_A_PART" -- Fancy Nature Pack
     },
-    BIRCHES = {"JK_BIRCH_A_PART", -- Fancy Nature Pack
+    BIRCHES = { -- Birch Trees
+    "JK_BIRCH_A_PART", -- Fancy Nature Pack
     "JK_BIRCH_B_PART", -- Fancy Nature Pack
     "JK_BIRCH_C_PART" -- Fancy Nature Pack
     },
-    TREES = {"TREE_SWAMP", -- Nature Deco
+    TREES = { -- Misc Trees
+    "TREE_SWAMP", -- Nature Deco
     "TREE_SWAMP2", -- Nature Deco
     "TREE_SWAMP3", -- Nature Deco
     "TREE_DEAD", -- Nature Deco
     "TREE_DEAD2", -- Nature Deco
     "TREE_DEAD3" -- Nature Deco
     },
-    SHRUBS = {"FERN", -- Nature Deco
+    SHRUBS = { -- Shrubs and Bushes
+    "FERN", -- Nature Deco
     "JK_SHRUB_FERN_PART", -- Fancy Nature Pack
     "JK_SHRUB_A_PART", -- Fancy Nature Pack
     "JK_SHRUB_FORSYTHIA_PART", -- Fancy Nature Pack
     "JK_SHRUB_STEPHANANDRA_PART", -- Fancy Nature Pack
     "JK_SHRUB_LAVENDER_PART" -- Fancy Nature Pack
     },
-    FLOWERS = {"JK_FLOWER_CORNFLOWER_PART", -- Fancy Nature Pack
+    FLOWERS = { -- Flowers
+    "JK_FLOWER_CORNFLOWER_PART", -- Fancy Nature Pack
     "JK_FLOWER_POPPIES_PART", -- Fancy Nature Pack
     "JK_FLOWER_CHAMOMILE_PART", -- Fancy Nature Pack
     "JK_MUSHROOM_PART" -- Fancy Nature Pack
     },
-    GRASS = {"GRASS01SMALL", -- Shrubbery
+    GRASS = { -- Grass
+    "GRASS01SMALL", -- Shrubbery
     "GRASS01MED", -- Shrubbery
     "GRASS01LARGE", -- Shrubbery
     "GRASS1", -- Nature Deco
     "GRASS2" -- Nature Deco
     },
-    LGROCKS = {"BOULDER1", -- Nature Deco
+    LGROCKS = { -- Large Rocks (Boulders)
+    "BOULDER1", -- Nature Deco
     "BOULDER2", -- Nature Deco
     "BOULDER3", -- Nature Deco
     "BOULDER4", -- Nature Deco
     "BOULDER5", -- Nature Deco
     "BOULDER6" -- Nature Deco
     },
-    MEDROCKS = {"STONE_TALL1", -- Nature Deco
+    MEDROCKS = { -- Medium Rocks (Stones)
+    "STONE_TALL1", -- Nature Deco
     "STONE_TALL2", -- Nature Deco
     "STONE_TALL3", -- Nature Deco
     "STONE_FLAT1", -- Nature Deco
     "STONE_FLAT2", -- Nature Deco
     "STONE_FLAT3" -- Nature Deco
     },
-    SMROCKS = {"STONE1", -- Nature Deco
+    SMROCKS = { -- Small Rocks (Rocks)
+    "STONE1", -- Nature Deco
     "STONE2", -- Nature Deco
     "STONE3", -- Nature Deco
     "STONE4", -- Nature Deco
@@ -82,20 +99,34 @@ local remix = {
     "STONE8", -- Nature Deco
     "STONE9" -- Nature Deco
     },
-    LOGS = {"MUSHROOM_LOG", -- Nature Deco
+    LOGS = { -- Logs
+    "MUSHROOM_LOG", -- Nature Deco
     "TREE_FALLEN", -- Nature Deco
     "TREE_FALLEN2", -- Nature Deco
     "TREE_STUMP" -- Nature Deco
     },
-    WATER = {"LILYPAD1", -- Nature Deco
+    WATER = { -- Aquatic Plants
+    "LILYPAD1", -- Nature Deco
     "LILYPAD2", -- Nature Deco
     "LILYPAD3", -- Nature Deco
     "REED1", -- Nature Deco
     "REED2" -- Nature Deco
     },
-    MISC = { -- Miscellaneous
+    FAUNA = { -- Animals
+    "CAT_PART", -- Fantasy Deco
+    "DOG_PART", -- Fantasy Deco
+    "RABBIT_PART", -- Fantasy Deco
+    "CHICKEN1_PART", -- Fantasy Deco
+    "CHICKEN2_PART", -- Fantasy Deco
+    "GOOSE1_PART" -- Fantasy Deco
+
+--[[ 
+    },
+    MISC = { -- Miscellaneous items
     "CAT_PART", -- Fantasy Deco
     "DOG_PART" -- Fantasy Deco
+--]]
+
     }
 }
 
@@ -473,6 +504,39 @@ local categories = {
             BuildingRegistered = true
         }
     },
+    FAUNA = {
+        CAT_PART = { -- Fantasy Deco
+            Order = 1,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
+        DOG_PART = { -- Fantasy Deco
+            Order = 2,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
+        RABBIT_PART = { -- Fantasy Deco
+            Order = 3,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
+        CHICKEN1_PART = { -- Fantasy Deco
+            Order = 4,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
+        CHICKEN2_PART = { -- Fantasy Deco
+            Order = 5,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
+        GOOSE1_PART = { -- Fantasy Deco
+            Order = 6,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        }
+--[[
+    },
     MISC = {
         CAT_PART = { -- Fantasy Deco
             Order = 1,
@@ -484,6 +548,7 @@ local categories = {
             AssetRegistered = true,
             BuildingRegistered = true
         }
+--]]
     }
 }
 
@@ -497,21 +562,56 @@ local nodeTypes = {}
 local monuments = {
     DETAILER = {
         Categories = {
-            PINES = {Order = 1},
-            MAPLES = {Order = 2},
-            OAKS = {Order = 3},
-            BEECHES = {Order = 4},
-            BIRCHES = {Order = 5},
-            TREES = {Order = 6},
-            SHRUBS = {Order = 7},
-            FLOWERS = {Order = 8},
-            GRASS = {Order = 9},
-            LGROCKS = {Order = 10},
-            MEDROCKS = {Order = 11},
-            SMROCKS = {Order = 12},
-            LOGS = {Order = 13},
-            WATER = {Order = 14},
-            MISC = {Order = 15}
+            PINES = {
+                Order = 1
+            },
+            MAPLES = {
+                Order = 2
+            },
+            OAKS = {
+                Order = 3
+            },
+            BEECHES = {
+                Order = 4
+            },
+            BIRCHES = {
+                Order = 5
+            },
+            TREES = {
+                Order = 6
+            },
+            SHRUBS = {
+                Order = 7
+            },
+            FLOWERS = {
+                Order = 8
+            },
+            GRASS = {
+                Order = 9
+            },
+            LGROCKS = {
+                Order = 10
+            },
+            MEDROCKS = {
+                Order = 11
+            },
+            SMROCKS = {
+                Order = 12
+            },
+            LOGS = {
+                Order = 13
+            },
+            WATER = {
+                Order = 14
+            },
+            FAUNA = {
+                Order = 15
+--[[ 
+            },
+            MISC = {
+                Order = 16
+--]]
+            }
         },
         Type = "DECORATION"
     }
