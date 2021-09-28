@@ -12,10 +12,13 @@
 -- https://mod.io/members/garranplum
 --
 -- 
+-- MY CONFIG File
+local configFile = "config.lua"
+
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
 -- DECLARE: GPS Version
-local version = "2.8.0"
+local version = "3.0"
 
 -- DECLARE: GP Object
 local GP = {}
@@ -81,7 +84,7 @@ GP:load("gp/buildings.lua")
 
 -- EXECUTE FILE: Custom Configuration
 -- Declares custom settings for this individual mod.
-GP:load("settings/config.lua")
+GP:load("settings/" .. configFile)
 
 -- EXECUTE FILE: Job Registration Functions
 -- Registers all jobs named in the config.
@@ -109,7 +112,7 @@ GP:startMod()
 
 -- EXECUTE FILE: Apply Custom Overrides
 -- Applies custom overrides to any built-in or defined objects.
-GP:load("scripts/overrides.lua")
+GP:load("settings/customOverrides.lua")
 
 -- CALL: Log Finished Loading
 GP:log("Finished Loading", GP:config().modName, GP:version())
