@@ -13,13 +13,15 @@ myMod:override({
     AssetCoreBuildingPart = GP:ids().monumentPole
 })
 
-GP:log(type(GP:config()))
-
 for catKey, catList in pairs(GP:config().remix) do
     for i,partName in ipairs(catList) do
         myMod:override({
             Id = partName,
             DesirabilityModifiers = {}
+        })
+        myMod:override({
+            Id = partName,
+            Order = i
         })
     end
 end
