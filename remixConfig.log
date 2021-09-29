@@ -8,34 +8,36 @@
 	remix = {
 		TREES = {"TREE_SWAMP", "TREE_SWAMP2", "TREE_SWAMP3", "TREE_DEAD", "TREE_DEAD2", "TREE_DEAD3"
 								}, 
+		BIRCHES = {"JK_BIRCH_A_PART", "JK_BIRCH_B_PART", "JK_BIRCH_C_PART"
+					}, 
 		WATER = {"LILYPAD1", "LILYPAD2", "LILYPAD3", "REED1", "REED2"
 							}, 
 		MEDROCKS = {"STONE_TALL1", "STONE_TALL2", "STONE_TALL3", "STONE_FLAT1", "STONE_FLAT2", "STONE_FLAT3"
 								}, 
 		FAUNA = {"CAT_PART", "DOG_PART", "RABBIT_PART", "CHICKEN1_PART", "CHICKEN2_PART", "GOOSE1_PART"
 								}, 
-		PINES = {"JK_PINE_A_PART", "JK_PINE_B_PART", "JK_PINE_C_PART"
-					}, 
+		SHRUBS = {"FERN", "JK_SHRUB_FERN_PART", "JK_SHRUB_A_PART", "JK_SHRUB_FORSYTHIA_PART", "JK_SHRUB_STEPHANANDRA_PART", "JK_SHRUB_LAVENDER_PART"
+								}, 
 		FLOWERS = {"JK_FLOWER_CORNFLOWER_PART", "JK_FLOWER_POPPIES_PART", "JK_FLOWER_CHAMOMILE_PART", "JK_MUSHROOM_PART"
 						}, 
 		LOGS = {"MUSHROOM_LOG", "TREE_FALLEN", "TREE_FALLEN2", "TREE_STUMP"
 						}, 
+		SMROCKS = {"STONE1", "STONE2", "STONE3", "STONE4", "STONE5", "STONE6", "STONE7", "STONE8", "STONE9"
+											}, 
 		GRASS = {"GRASS01SMALL", "GRASS01MED", "GRASS01LARGE", "GRASS1", "GRASS2"
 							}, 
-		BIRCHES = {"JK_BIRCH_A_PART", "JK_BIRCH_B_PART", "JK_BIRCH_C_PART"
-					}, 
 		MAPLES = {"JK_MAPLE_A_PART", "JK_MAPLE_B_PART"
 				}, 
 		OAKS = {"JK_OAK_A_PART", "JK_OAK_B_PART", "JK_OAK_C_PART"
 					}, 
 		LGROCKS = {"BOULDER1", "BOULDER2", "BOULDER3", "BOULDER4", "BOULDER5", "BOULDER6"
 								}, 
-		SHRUBS = {"FERN", "JK_SHRUB_FERN_PART", "JK_SHRUB_A_PART", "JK_SHRUB_FORSYTHIA_PART", "JK_SHRUB_STEPHANANDRA_PART", "JK_SHRUB_LAVENDER_PART"
-								}, 
+		PINES = {"JK_PINE_A_PART", "JK_PINE_B_PART", "JK_PINE_C_PART"
+					}, 
 		BEECHES = {"JK_BEECH_A_PART", "JK_BEECH_B_PART", "JK_BEECH_C_PART", "JK_BEECH_D_PART", "JK_BEECH_SAPLING_A_PART"
 							}, 
-		SMROCKS = {"STONE1", "STONE2", "STONE3", "STONE4", "STONE5", "STONE6", "STONE7", "STONE8", "STONE9"
-											}
+		MISC = {"CAT_PART", "DOG_PART"
+				}
 	}, 
 	categories = {
 		TREES = {
@@ -60,6 +62,20 @@
 					AssetRegistered = true
 					}, 
 			TREE_DEAD2 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}
+		}, 
+		BIRCHES = {
+			JK_BIRCH_A_PART = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			JK_BIRCH_C_PART = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			JK_BIRCH_B_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -138,16 +154,28 @@
 					AssetRegistered = true
 					}
 		}, 
-		PINES = {
-			JK_PINE_C_PART = {
+		SHRUBS = {
+			JK_SHRUB_STEPHANANDRA_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			JK_PINE_B_PART = {
+			JK_SHRUB_A_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			JK_PINE_A_PART = {
+			FERN = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			JK_SHRUB_FERN_PART = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			JK_SHRUB_LAVENDER_PART = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			JK_SHRUB_FORSYTHIA_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -188,6 +216,44 @@
 					AssetRegistered = true
 					}
 		}, 
+		SMROCKS = {
+			STONE5 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE8 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE3 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE6 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE1 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE9 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE4 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE7 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}, 
+			STONE2 = {
+				BuildingRegistered = true, 
+					AssetRegistered = true
+					}
+		}, 
 		GRASS = {
 			GRASS01LARGE = {
 				BuildingRegistered = true, 
@@ -206,20 +272,6 @@
 					AssetRegistered = true
 					}, 
 			GRASS1 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}
-		}, 
-		BIRCHES = {
-			JK_BIRCH_A_PART = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			JK_BIRCH_C_PART = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			JK_BIRCH_B_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -274,28 +326,16 @@
 					AssetRegistered = true
 					}
 		}, 
-		SHRUBS = {
-			JK_SHRUB_STEPHANANDRA_PART = {
+		PINES = {
+			JK_PINE_C_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			JK_SHRUB_A_PART = {
+			JK_PINE_B_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			FERN = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			JK_SHRUB_FERN_PART = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			JK_SHRUB_LAVENDER_PART = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			JK_SHRUB_FORSYTHIA_PART = {
+			JK_PINE_A_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -322,40 +362,12 @@
 					AssetRegistered = true
 					}
 		}, 
-		SMROCKS = {
-			STONE5 = {
+		MISC = {
+			DOG_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}, 
-			STONE8 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE3 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE6 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE1 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE9 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE4 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE7 = {
-				BuildingRegistered = true, 
-					AssetRegistered = true
-					}, 
-			STONE2 = {
+			CAT_PART = {
 				BuildingRegistered = true, 
 					AssetRegistered = true
 					}
@@ -367,9 +379,11 @@
 				Categories = {
 					TREES = {
 					}, 
+					BIRCHES = {
+					}, 
 					WATER = {
 					}, 
-					MEDROCKS = {
+					MISC = {
 					}, 
 					FAUNA = {
 					}, 
@@ -379,9 +393,9 @@
 					}, 
 					LOGS = {
 					}, 
-					GRASS = {
+					SMROCKS = {
 					}, 
-					PINES = {
+					GRASS = {
 					}, 
 					MAPLES = {
 					}, 
@@ -389,11 +403,11 @@
 					}, 
 					LGROCKS = {
 					}, 
-					BIRCHES = {
+					PINES = {
 					}, 
 					BEECHES = {
 					}, 
-					SMROCKS = {
+					MEDROCKS = {
 					}
 				}
 			}

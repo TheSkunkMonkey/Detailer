@@ -114,15 +114,11 @@ local remix = {
     "CHICKEN1_PART", -- Fantasy Deco
     "CHICKEN2_PART", -- Fantasy Deco
     "GOOSE1_PART" -- Fantasy Deco
-
---[[ 
     },
     MISC = { -- Miscellaneous items
     "CAT_PART", -- Fantasy Deco
     "DOG_PART" -- Fantasy Deco
---]]
-
-    }
+  }
 }
 
 -- MY CONFIG Paths
@@ -530,7 +526,7 @@ local categories = {
             AssetRegistered = true,
             BuildingRegistered = true
         }
---[[
+        --[[
     },
     MISC = {
         CAT_PART = { -- Fantasy Deco
@@ -601,7 +597,7 @@ local monuments = {
             },
             FAUNA = {
                 Order = 15
---[[ 
+                --[[ 
             },
             MISC = {
                 Order = 16
@@ -612,10 +608,118 @@ local monuments = {
     }
 }
 
+--[[
+-- MY CONFIG Remix
+local remix = {
+    PINES = { -- Pine Trees
+    "JK_PINE_A_PART", -- Fancy Nature Pack
+    "JK_PINE_B_PART", -- Fancy Nature Pack
+    "JK_PINE_C_PART" -- Fancy Nature Pack
+    },
+    MAPLES = { -- Maple Trees
+    "JK_MAPLE_A_PART", -- Fancy Nature Pack
+    "JK_MAPLE_B_PART" -- Fancy Nature Pack
+    },
+    OAKS = { -- Oak Trees
+    "JK_OAK_A_PART", -- Fancy Nature Pack
+    "JK_OAK_B_PART", -- Fancy Nature Pack
+    "JK_OAK_C_PART" -- Fancy Nature Pack
+    },
+    BEECHES = { -- Beech Trees
+    "JK_BEECH_A_PART", -- Fancy Nature Pack
+    "JK_BEECH_B_PART", -- Fancy Nature Pack
+    "JK_BEECH_C_PART", -- Fancy Nature Pack
+    "JK_BEECH_D_PART", -- Fancy Nature Pack
+    "JK_BEECH_SAPLING_A_PART" -- Fancy Nature Pack
+    },
+    BIRCHES = { -- Birch Trees
+    "JK_BIRCH_A_PART", -- Fancy Nature Pack
+    "JK_BIRCH_B_PART", -- Fancy Nature Pack
+    "JK_BIRCH_C_PART" -- Fancy Nature Pack
+    },
+    TREES = { -- Misc Trees
+    "TREE_SWAMP", -- Nature Deco
+    "TREE_SWAMP2", -- Nature Deco
+    "TREE_SWAMP3", -- Nature Deco
+    "TREE_DEAD", -- Nature Deco
+    "TREE_DEAD2", -- Nature Deco
+    "TREE_DEAD3" -- Nature Deco
+    },
+    SHRUBS = { -- Shrubs and Bushes
+    "FERN", -- Nature Deco
+    "JK_SHRUB_FERN_PART", -- Fancy Nature Pack
+    "JK_SHRUB_A_PART", -- Fancy Nature Pack
+    "JK_SHRUB_FORSYTHIA_PART", -- Fancy Nature Pack
+    "JK_SHRUB_STEPHANANDRA_PART", -- Fancy Nature Pack
+    "JK_SHRUB_LAVENDER_PART" -- Fancy Nature Pack
+    },
+    FLOWERS = { -- Flowers
+    "JK_FLOWER_CORNFLOWER_PART", -- Fancy Nature Pack
+    "JK_FLOWER_POPPIES_PART", -- Fancy Nature Pack
+    "JK_FLOWER_CHAMOMILE_PART", -- Fancy Nature Pack
+    "JK_MUSHROOM_PART" -- Fancy Nature Pack
+    },
+    GRASS = { -- Grass
+    "GRASS01SMALL", -- Shrubbery
+    "GRASS01MED", -- Shrubbery
+    "GRASS01LARGE", -- Shrubbery
+    "GRASS1", -- Nature Deco
+    "GRASS2" -- Nature Deco
+    },
+    LGROCKS = { -- Large Rocks (Boulders)
+    "BOULDER1", -- Nature Deco
+    "BOULDER2", -- Nature Deco
+    "BOULDER3", -- Nature Deco
+    "BOULDER4", -- Nature Deco
+    "BOULDER5", -- Nature Deco
+    "BOULDER6" -- Nature Deco
+    },
+    MEDROCKS = { -- Medium Rocks (Stones)
+    "STONE_TALL1", -- Nature Deco
+    "STONE_TALL2", -- Nature Deco
+    "STONE_TALL3", -- Nature Deco
+    "STONE_FLAT1", -- Nature Deco
+    "STONE_FLAT2", -- Nature Deco
+    "STONE_FLAT3" -- Nature Deco
+    },
+    SMROCKS = { -- Small Rocks (Rocks)
+    "STONE1", -- Nature Deco
+    "STONE2", -- Nature Deco
+    "STONE3", -- Nature Deco
+    "STONE4", -- Nature Deco
+    "STONE5", -- Nature Deco
+    "STONE6", -- Nature Deco
+    "STONE7", -- Nature Deco
+    "STONE8", -- Nature Deco
+    "STONE9" -- Nature Deco
+    },
+    LOGS = { -- Logs
+    "MUSHROOM_LOG", -- Nature Deco
+    "TREE_FALLEN", -- Nature Deco
+    "TREE_FALLEN2", -- Nature Deco
+    "TREE_STUMP" -- Nature Deco
+    },
+    WATER = { -- Aquatic Plants
+    "LILYPAD1", -- Nature Deco
+    "LILYPAD2", -- Nature Deco
+    "LILYPAD3", -- Nature Deco
+    "REED1", -- Nature Deco
+    "REED2" -- Nature Deco
+    },
+    FAUNA = { -- Animals
+    "CAT_PART", -- Fantasy Deco
+    "DOG_PART", -- Fantasy Deco
+    "RABBIT_PART", -- Fantasy Deco
+    "CHICKEN1_PART", -- Fantasy Deco
+    "CHICKEN2_PART", -- Fantasy Deco
+    "GOOSE1_PART" -- Fantasy Deco
 
--- 
---
---
+    },
+    MISC = { -- Miscellaneous items
+    }
+}
+--]]
+
 --
 --
 -- WARNING!
@@ -644,7 +748,9 @@ function GP:config()
     }
 
     -- Create a remix monument.
-    config.monuments[modName] = config.monuments[modName] or {Categories = {}}
+    config.monuments[modName] = config.monuments[modName] or {
+        Categories = {}
+    }
 
     -- Remix each category on the list.
     for category, partsList in pairs(config.remix) do
