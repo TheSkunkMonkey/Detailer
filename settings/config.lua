@@ -124,6 +124,9 @@ local monuments = {
     }
 }
 
+-- 
+--
+--
 --
 --
 -- WARNING!
@@ -174,10 +177,14 @@ function GP:config()
 
         end
 
-        -- Add the category to the monument.
-        config.monuments[modName].Categories[category] = {}
+        -- Add the category to the monument if not already in config.
+        if not (config.monuments[modName].Categories[category]) then
+            config.monuments[modName].Categories[category] = {}
+        end
 
     end
+
+    GP:writeTable(config)
 
     -- Return canonized copy.
     return GP:copyTable(config)
