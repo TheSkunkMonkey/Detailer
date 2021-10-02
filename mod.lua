@@ -3,7 +3,7 @@
 --
 -- All my favorite flora/fauna parts from various mods
 -- gathered under one monument for easy mmaipulation
--- and organization. Made with GPS.
+-- and organization. Powered by GPS.
 
 -- Get more SM mods at mod.io:
 -- https://mod.io/members/skunkmonkey
