@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta id="82f52cf5-217e-439a-a0ce-5082cd916298">
+	<meta id="8bcd75de-907c-4e0b-9b20-b3bb959159e3" type="group" folder="true" name="Materials">
+		<meta id="a357dbd4-dd54-43a2-899c-1d8fb42c06fe" name="birch_leaves_2"/>
+		<meta id="b318b29d-2793-471f-97cf-7c755e79a498" name="beech_trunk"/>
+		<meta id="1dc5bf8d-2274-4112-90e6-53d6c9354dc8" name="shrub_a"/>
+		<meta id="ab097d0f-8d19-444c-9d95-97a804a75757" name="grass"/>
+		<meta id="8f636231-1b09-4d63-8654-6e2eab041184" name="colors"/>
+		<meta id="8963217d-267d-4aa8-88ed-c977fc49cc1a" name="stone"/>
+	</meta>
+	<meta id="600980b6-cd91-4739-9a2b-4426d670eac6" type="group" folder="true" name="Meshes">
+		<meta id="546d7bc6-0ec8-40f1-a1cf-15e091043905" name="tree_birch_leaves_2"/>
+		<meta id="860f54f5-2181-48c2-946a-6ff436ba5373" name="tree_beech_trunk"/>
+		<meta id="0bc3c359-1cf4-4b9a-a096-cf30b5bb794e" name="bush_shrub_a"/>
+		<meta id="ef7da79b-a64d-4fd7-9b09-a961ebe25454" name="bush_grass"/>
+		<meta id="31a046d4-a626-4bf9-bbac-d4c3c013e79b" name="grass_colors"/>
+		<meta id="3af4abf2-eb98-49c9-90a7-4892ae01c77b" name="rock_stone"/>
+		<meta id="cdcbba5d-d93d-4e19-888c-0d79bd50fa7a" name="rock.001_stone"/>
+	</meta>
+	<meta id="50f7e584-48dd-4196-a0f2-d0a932b39007" name="Prefab">
+		<meta id="c01790be-5001-4ffa-a5d5-376239886001" name="Mod_Icon">
+			<meta id="e3188cde-8256-420a-8ae4-dd4087aadf9c" name="tree">
+				<meta id="d8eca236-af25-4dcb-bb90-56b18b39088e" name="tree_0"/>
+				<meta id="58c52372-38b0-4fa3-a893-0a0f2e670947" name="tree_1"/>
+			</meta>
+			<meta id="207227d2-9781-4439-b492-6ad9f3c62672" name="bush">
+				<meta id="f4c0c9c4-0549-4446-93e7-81e6909e872c" name="bush_0"/>
+				<meta id="4bdf4ab2-0126-41dd-a4eb-695355bb3c49" name="bush_1"/>
+			</meta>
+			<meta id="f3f578b2-0c85-44a4-b612-8dca602002e6" name="grass"/>
+			<meta id="b67cf744-6a37-46bb-a1c4-591e3efcb2b0" name="rock"/>
+			<meta id="b9d15b99-0414-4755-85bd-66532d23de1f" name="rock.001"/>
+		</meta>
+	</meta>
+</meta>
+<importer type="GamCFbxImporterConfiguration">
+	<Md5Checksum value="790a3be14e4079fc6cb5273ea6e995a2"/>
+	<Scale value="0.01"/>
+	<PatchMeshOffset value="true"/>
+	<UniqueNodeName value="false"/>
+	<ImportAnimation value="false"/>
+	<IgnoreRootAnimation value="false"/>
+	<FlipXAxis value="true"/>
+	<MergeDuplicateMeshes value="true"/>
+	<GenerateLod value="false"/>
+	<OverrideExistingLod value="false"/>
+	<NodeConfig type="GenCFbxNodeConfig">
+		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+		<ChildList>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="tree_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="tree_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="tree"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="bush_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="bush_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="bush"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="grass"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="rock"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="rock.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Mod_Icon"/>
+			</Item>
+		</ChildList>
+		<NodeName value="Prefab"/>
+	</NodeConfig>
+	<MaterialList>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="b318b29d-2793-471f-97cf-7c755e79a498"/>
+			<MaterialName value="beech_trunk"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="a357dbd4-dd54-43a2-899c-1d8fb42c06fe"/>
+			<MaterialName value="birch_leaves_2"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="8f636231-1b09-4d63-8654-6e2eab041184"/>
+			<MaterialName value="colors"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="ab097d0f-8d19-444c-9d95-97a804a75757"/>
+			<MaterialName value="grass"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="1dc5bf8d-2274-4112-90e6-53d6c9354dc8"/>
+			<MaterialName value="shrub_a"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="8963217d-267d-4aa8-88ed-c977fc49cc1a"/>
+			<MaterialName value="stone"/>
+		</Item>
+	</MaterialList>
+</importer>
+
