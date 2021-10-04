@@ -32,6 +32,7 @@ end
 
 -- GP:log(myModId, "Registering Asset ID PREFAB_MOD_ICON")
 
+-- Custom icon by @RaisinMuffin
 myMod:registerAssetId("models/mod_icon.fbx/Prefab/Mod_Icon", "PREFAB_MOD_ICON")
 
 -- GP:log(myModId, "Registering DETAILER_MOD_ICON")

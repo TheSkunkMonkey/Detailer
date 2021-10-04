@@ -11,7 +11,10 @@
 ### Get more SM mods at mod.io:
 https://mod.io/members/skunkmonkey
 
-### Made with GPS by Garran Plum
+### Powered by GPS from Garran Plum
 https://mod.io/members/garranplum
+
+### Custom Icon by Raisin Muffin
+https://mod.io/members/raisinmuffin
 
 - Find me on the official Discord @SkunkMonkey

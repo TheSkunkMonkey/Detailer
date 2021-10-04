@@ -11,6 +11,9 @@
 -- GPS by Garran Plum
 -- https://mod.io/members/garranplum
 --
+-- Custom Icon by Raisin Muffin
+-- https://mod.io/members/raisinmuffin
+--
 -- 
 -- MY CONFIG File
 local configFile = "config.lua"
